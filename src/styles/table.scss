@@ -1,0 +1,39 @@
+.table{
+    width: 100%;
+    padding: 10px;
+    font-family: 'Dosis', sans-serif;
+    font-size: 20px;
+    border-collapse: collapse;
+    caption{
+        background-color: rgb(9, 37, 8);
+        color: white;
+        padding: 5px 0;
+        position: sticky;
+        top: 0;
+    }
+    thead{
+        position: sticky;
+        top: 0;
+    }
+    th{
+        font-weight: 800;
+        border: 1px solid white;
+        background-color: rgb(86, 167, 106);
+    }
+    td{
+        border: 1px solid white;
+        overflow-x: auto;
+        &::-webkit-scrollbar {
+            height: 3px;
+            width: 10px;
+            background-color: #51ff77;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: #002c04;
+            border-radius: 10px;
+        }
+    }
+    th, td{
+        padding: 10px;
+    }
+}

@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import { Table } from "./components/Table";
 
-function App() {
+const data = require('./data/data.json');
+const data2 = require('./data/data2.json');
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <div className="container">
+        <Table dataUrl={data}/>
+        <Table dataUrl={data2}/>
+      </div>
     </div>
   );
 }
