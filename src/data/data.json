@@ -1,10 +1,10 @@
 {
     "columns": {
-        "amount": 11,
+        "amount": 30,
         "text": "Table 1"
     },
     "rows": {
-        "amount": 11,
+        "amount": 111,
         "text": "Table 1"
     }
 }

@@ -1,6 +1,8 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 
-export const Table = ({ dataUrl, name }) => {
+import { Visible } from '../utils';
+
+export const Table = ({ dataUrl, changeHeader }) => {
     
     const { columns, rows } = dataUrl;
 
@@ -30,19 +32,12 @@ export const Table = ({ dataUrl, name }) => {
     }
 
     return (
-        <table className="table">
-            <thead>
-                <tr>
+            <table className="table">
+                <tbody>
                     {
-                        renderColumns(columnsCount, columnsText, 'th')
+                        renderRows(rowsCount, cellsText)
                     }
-                </tr>
-            </thead>
-            <tbody>
-                {
-                    renderRows(rowsCount, cellsText)
-                }
-            </tbody>
-        </table>
+                </tbody>
+            </table>
     )
 }

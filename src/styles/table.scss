@@ -1,7 +1,6 @@
 .table{
     width: 100%;
     padding: 10px;
-    font-family: 'Dosis', sans-serif;
     font-size: 20px;
     border-collapse: collapse;
     caption{
@@ -35,5 +34,28 @@
     }
     th, td{
         padding: 10px;
+        min-width: 100px;
+    }
+}
+
+.headers{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    overflow-x: auto;
+}
+
+.track{
+    display: flex;
+    div{
+        min-width: 100px;
+        background-color: rgb(0, 59, 0);
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0;
+        border: 1px solid white;
+        text-transform: uppercase;
     }
 }
